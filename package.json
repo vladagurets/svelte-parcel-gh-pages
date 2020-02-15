@@ -1,0 +1,35 @@
+{
+  "name": "svelte-parcel-gh-pages",
+  "version": "1.0.0",
+  "description": "Make your ideas with Svelte, Parcel and Github Actions",
+  "main": "index.html",
+  "homepage": "https://GITHUB_USERANME.github.io/YOUR_REPO_NAME",
+  "repository": "https://github.com/GITHUB_USERANME/YOUR_REPO_NAME",
+  "scripts": {
+    "dev": "parcel ./index.html --open",
+    "build": "parcel build ./index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "parcel",
+    "svelte",
+    "template",
+    "boilerplate",
+    "zeroconfiguration"
+  ],
+  "author": "",
+  "license": "ISC",
+  "browserslist": "> 2%",
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-svelte": "^4.0.2"
+  },
+  "dependencies": {
+    "svelte": "^3.9.1"
+  },
+  "alias": {
+    "public": "./public",
+    "src": "./src"
+  }
+}
